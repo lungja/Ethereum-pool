@@ -45,7 +45,7 @@ var pow256 = math.BigPow(2, 256)
 var hasher = ethash.New()
 
 var secret = "CHANGETHIS"
-var poolPort = "5082"
+var poolPort = "3000"
 var ethereumPort = "8545" //8545 = geth, 8080 = eth (requires dev branch when using eth client)
 
 var logInfo *log.Logger
