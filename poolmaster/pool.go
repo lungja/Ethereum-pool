@@ -17,6 +17,7 @@ import (
 	// online package actual downloads, offline build fast
 	"github.com/ethereum/ethash"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/common/math"
 	"github.com/gorilla/mux"
 )
 
@@ -39,7 +40,7 @@ var okRequest = `{
   "result": true
 }`
 
-var pow256 = common.BigPow(2, 256)
+var pow256 = math.BigPow(2, 256)
 
 var hasher = ethash.New()
 
